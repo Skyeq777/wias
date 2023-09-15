@@ -18,47 +18,143 @@
     
     <br>
     <br>
-    <input name="Login" div id="b1" >Podaj swój login<br><br>
-    <input name="Haslo" div id="b2">Podaj swoje haslo<br><br>
-    <input name="Email">Podaj swoj email<br><br>
+    <input id="Login" div id="b1" >Podaj swój login<br><br>
+    <input id="Haslo" div id="b2">Podaj swoje haslo<br><br>
+    <input id="Email">Podaj swoj email<br><br>
     <br>
     <br>
     <p>Do jakiej dywizji</p>
-    <input type="radio" name="dywizja" value="gold">Zloto<br>
-    <input type="radio" name="dywizja" value="platinum">Platyna<br>
-    <input type="radio" name="dywizja" value="Emerald">Szmaragd<br>
-    <input type="radio" name="dywizja" value="Diamond">Diament<br>
+    <input type="radio" id="gold" name="dywizjaa" value="gold">gold<br>
+    <input type="radio" id="platinum" name="dywizjaa" value="platinum">platinum<br>
+    <input type="radio" id="Emerald" name="dywizjaa" value="Emerald">Emerald<br>
+    <input type="radio" id="Diamond" name="dywizjaa" value="Diamond">Diamond<br>
     <br>
     <br>
     <p>Jakimi postaciami</p>
-    <input type="checkbox" name="postac" value="Leesin">Leesin<br>
-    <input type="checkbox" name="postac" value="Xinzhao">Xinzhao<br>
-    <input type="checkbox" name="postac" value="Pantheon">Pantheon<br>
-    <input type="checkbox" name="postac" value="Yone">Yone<br>
-    <input type="checkbox" name="postac" value="Yasuo">Yasuo<br>
+    <input type="checkbox" id="Leesin" name="postac" value="Leesin">Leesin<br>
+    <input type="checkbox" id="Xinzhao" name="postac" value="Xinzhao">Xinzhao<br>
+    <input type="checkbox" id="Pantheon" name="postac" value="Pantheon">Pantheon<br>
+    <input type="checkbox" id="Yone" name="postac" value="Yone">Yone<br>
+    <input type="checkbox" id="Yasuo" name="postac" value="Yasuo">Yasuo<br>
     <br>
     <br>
     <p>Zlecenie od do godziny:</p>
-    <input type="radio" name="godzina" value="12-16">12-16<br>
-    <input type="radio" name="godzina" value="14-18">14-18<br>
-    <input type="radio" name="godzina" value="18-24">18-24<br>
-    <input type="radio" name="godzina" value="20-4">20-4<br>
+    <input type="radio" id="godzina1" name="godzinaa" value="12-16">12-16<br>
+    <input type="radio" id="godzina2" name="godzinaa" value="14-18">14-18<br>
+    <input type="radio" id="godzina3" name="godzinaa" value="18-24">18-24<br>
+    <input type="radio" id="godzina4" name="godzinaa" value="20-4">20-4<br>
     <br>
     <br>
     <p>W jakiej/jakich kolejce/kolejkach:</p>
-    <input type="checkbox" name="tryb" value="Solo/Duo">Solo/Duo<br>
-    <input type="checkbox" name="tryb" value="Flex">Flex<br>
-    <input type="checkbox" name="tryb" value="TFT">TFT<br>
+    <input type="checkbox" id="tryb1" value="Solo/Duo">Solo/Duo<br>
+    <input type="checkbox" id="tryb2" value="Flex">Flex<br>
+    <input type="checkbox" id="tryb3" value="TFT">TFT<br>
 
 
 
-<input type="tekst" id="jd">
+
 <br>
 <button onclick="jd()">Kto ananasowy pod woda ma dom</button>
     <script>
         function jd() {
-        var abc =  document.getElementById("jd").value;
+        var abc =  document.getElementById("Login").value;
           console.log(abc)
+
+          var abc =  document.getElementById("Haslo").value;
+          console.log(abc)
+
+          var abc =  document.getElementById("Email").value;
+          console.log(abc)
+
+          var abc =  document.getElementById("gold").value;
+          if(document.getElementById('gold').checked) {
+    console.log(abc)
+}
+var abc =  document.getElementById("platinum").value;
+          if(document.getElementById('platinum').checked) {
+    console.log(abc)
+}
+
+var abc =  document.getElementById("Emerald").value;
+          if(document.getElementById('Emerald').checked) {
+    console.log(abc)
+}
+
+var abc =  document.getElementById("Diamond").value;
+          if(document.getElementById('Diamond').checked) {
+    console.log(abc)
+}
+
+
+var abc =  document.getElementById("Leesin").value;
+          if(document.getElementById('Leesin').checked) {
+    console.log(abc)
+}
+
+var abc =  document.getElementById("Xinzhao").value;
+          if(document.getElementById('Xinzhao').checked) {
+    console.log(abc)
+}
+
+var abc =  document.getElementById("Pantheon").value;
+          if(document.getElementById('Pantheon').checked) {
+    console.log(abc)
+}
+
+var abc =  document.getElementById("Yone").value;
+          if(document.getElementById('Yone').checked) {
+    console.log(abc)
+}
+
+var abc =  document.getElementById("Yasuo").value;
+          if(document.getElementById('Yasuo').checked) {
+    console.log(abc)
+}
+
+
+var abc =  document.getElementById("godzina1").value;
+          if(document.getElementById('godzina1').checked) {
+    console.log(abc)
+}
+
+var abc =  document.getElementById("godzina2").value;
+          if(document.getElementById('godzina2').checked) {
+    console.log(abc)
+}
+
+var abc =  document.getElementById("godzina3").value;
+          if(document.getElementById('godzina3').checked) {
+    console.log(abc)
+}
+
+var abc =  document.getElementById("godzina4").value;
+          if(document.getElementById('godzina4').checked) {
+    console.log(abc)
+}
+
+
+
+var abc =  document.getElementById("tryb1").value;
+          if(document.getElementById('tryb1').checked) {
+    console.log(abc)
+}
+
+var abc =  document.getElementById("tryb2").value;
+          if(document.getElementById('tryb2').checked) {
+    console.log(abc)
+}
+
+var abc =  document.getElementById("tryb3").value;
+          if(document.getElementById('tryb3').checked) {
+    console.log(abc)
+}
+
+
+
+
+
+
+
         }
         </script>
     
