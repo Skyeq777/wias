@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="doformularza.css">
+</head>
+<body>
+    Religia <input type="number" id="religia"> <br>
+    WF <input type="number" id="WF"><br>
+    Plastyka <input type="number" id="Plastyka"><br>
+    Muzyka <input type="number" id="Muzyka"><br>
+    Technika <input type="number" id="Technika"><br>
+    <button onclick="myFunction()">Click me</button>
+
+    <script>
+       function myFunction() {
+        var abc1 = document.getElementById("religia").value;
+         abc1=parseFloat(abc1)
+       var abc2 = document.getElementById("WF").value;
+       abc2=parseFloat(abc2)
+      var abc3 = document.getElementById("Plastyka").value;
+     abc3=parseFloat(abc3)
+        var abc4 = document.getElementById("Muzyka").value;
+        abc4=parseFloat(abc4)
+    var abc5 = document.getElementById("Technika").value;
+         abc5=parseFloat(abc5)
+      var suma = abc1+abc2+abc3+abc4+abc5;
+
+     var srednia = suma/5
+
+    //    document.write(srednia)
+
+       document.getElementById("jd1").innerHTML=abc1;
+       document.getElementById("jd2").innerHTML=abc2;
+       document.getElementById("jd3").innerHTML=abc3;
+       document.getElementById("jd4").innerHTML=abc4;
+       document.getElementById("jd5").innerHTML=abc5;
+     
+        }
+        </script>
+        <p id="jd1"></p>
+        <p id="jd2"></p>
+        <p id="jd3"></p>
+        <p id="jd4"></p>
+        <p id="jd5"></p>
+        
+</body>
+</html>
